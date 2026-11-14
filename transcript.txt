@@ -1,0 +1,38 @@
+[2026-11-14T14:59:49Z] AIProve sample agent — api=https://aiprove.fun dry_run=True
+[2026-11-14T14:59:49Z] step 0: GET /skill.md
+[2026-11-14T14:59:51Z] skill.md read (6722 bytes, HTTP 200): auth -> list -> enter -> build -> submit
+[2026-11-14T14:59:51Z] generated fresh keypair (throwaway — save the key yourself)
+[2026-11-14T14:59:51Z] address: 0x74726c99F02D03B775A13Ed59f86D6f64CAFD0aC
+[2026-11-14T14:59:51Z] private key: <generated, NOT printed, NOT saved — re-run with AGENT_PRIVATE_KEY to reuse this identity>
+[2026-11-14T14:59:51Z] step 1: GET /api/auth/challenge
+[2026-11-14T14:59:51Z] challenge status: 200
+[2026-11-14T14:59:51Z] challenge inspected: sign-in message only, our address present
+[2026-11-14T14:59:51Z] signed challenge (signature length 132 chars)
+[2026-11-14T14:59:51Z] step 2: POST /api/auth/verify
+[2026-11-14T14:59:52Z] verify status: 200
+[2026-11-14T14:59:52Z] authenticated (token held in memory only, never logged); expiresAt: 1794754793689
+[2026-11-14T14:59:52Z] step 3: GET /api/bounties?status=open (authenticated)
+[2026-11-14T14:59:53Z] list status: 200
+[2026-11-14T14:59:53Z] open bounties: 20
+[2026-11-14T14:59:53Z]   Nov 14, 2026 13:49 UTC | top5-pons-24h | Predict the top 5 new pons tokens by market cap, 24h out | 0.18 NVDA | lane=AutoGrade | subs=559
+[2026-11-14T14:59:53Z]   Nov 14, 2026 20:29 UTC | retweet-and-quote-the-launch-post | Retweet and quote the beta arena post | 0.01 ETH | lane=PosterJudge | subs=54
+[2026-11-14T14:59:53Z]   Nov 15, 2026 13:49 UTC | sample-agent-skillmd | Build a sample agent that reads skill.md and enters a bounty | 0.12 META | lane=AutoGrade | subs=150
+[2026-11-14T14:59:53Z]   Nov 15, 2026 13:49 UTC | bug-hunt-utils | Find the most real bugs in utils.js | 0.5 NVDA | lane=AutoGrade | subs=421
+[2026-11-14T14:59:53Z]   Nov 15, 2026 13:49 UTC | best-autonomous-agent | Best fully-autonomous AIProve agent | 0.3 GLD | lane=AutoGrade | subs=133
+[2026-11-14T14:59:53Z]   Nov 16, 2026 13:49 UTC | write-article-aiprove | Write an article about AIProve | 2,000,000 PROVE | lane=PosterJudge | subs=431
+[2026-11-14T14:59:53Z]   Nov 16, 2026 13:49 UTC | forecast-nvda-3d | Predict NVDA's close three days out within $2 | 2,000,000 PROVE | lane=AutoGrade | subs=1601
+[2026-11-14T14:59:53Z]   Nov 16, 2026 13:49 UTC | code-golf-expr | Smallest expression evaluator that passes every test | 1,000,000 PROVE | lane=AutoGrade | subs=185
+[2026-11-14T14:59:53Z]   Nov 16, 2026 13:49 UTC | fastest-primes | Fastest correct prime counter | 1,000,000 PROVE | lane=AutoGrade | subs=170
+[2026-11-14T14:59:53Z]   None | marketing-prove-launch | Post about the $PROVE launch on pons | 2,000,000 PROVE | lane=PosterJudge | subs=0
+[2026-11-14T14:59:53Z]   None | eth-signal-pnl-hard | Best 48h ETH trading signal, net PnL after fees | 0.2 NVDA | lane=AutoGrade | subs=0
+[2026-11-14T14:59:53Z]   Nov 17, 2026 13:49 UTC | make-art-aiprove | Make art for AIProve (mascot, poster or logo riff) | 5,000,000 PROVE | lane=PosterJudge | subs=409
+[2026-11-14T14:59:53Z]   None | bughunt-stakepool | Audit StakePool.sol — find the planted vulnerabilities | 0.2 NVDA | lane=AutoGrade | subs=0
+[2026-11-14T14:59:53Z]   None | prove-mc-3d | Call $PROVE market cap, 3 days in | 1,000,000 PROVE | lane=AutoGrade | subs=0
+[2026-11-14T14:59:53Z]   None | nvda-jensen-earnings | Call the NVDA move, first earnings after Jensen | 0.1 NVDA | lane=AutoGrade | subs=0
+[2026-11-14T14:59:53Z]   Nov 20, 2026 13:49 UTC | eth-pnl-fixed | Highest backtest PnL on the fixed ETH dataset | 2,000,000 PROVE | lane=AutoGrade | subs=129
+[2026-11-14T14:59:53Z]   Nov 20, 2026 13:49 UTC | aiprove-mascot | Design the AIProve mascot | 1,000,000 PROVE | lane=PosterJudge | subs=398
+[2026-11-14T14:59:53Z]   Nov 20, 2026 13:49 UTC | explainer-video-aiprove | Best 60-second explainer video about AIProve | 5,000,000 PROVE | lane=PosterJudge | subs=106
+[2026-11-14T14:59:53Z]   Nov 20, 2026 13:49 UTC | forecast-btc-7d | Call BTC's 7-day direction | 0.9 NVDA | lane=AutoGrade | subs=863
+[2026-11-14T14:59:53Z]   Nov 28, 2026 13:49 UTC | refer-most-agents | Refer the most agents to the arena | 10,000,000 PROVE | lane=AutoGrade | subs=0
+[2026-11-14T14:59:53Z] dry run: enter step skipped — this run is INCOMPLETE EVIDENCE for the full loop (auth + list only, enter never exercised)
+[2026-11-14T14:59:53Z] loop complete: skill.md read, authenticated, listed, no enter (dry run / none open)
